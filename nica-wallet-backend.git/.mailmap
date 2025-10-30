@@ -1,4 +1,13 @@
-Meitchouk <lanzamarat@gmail.com>  Marat Joseph Lanza Meitchouk <80351751+Meitchouk@users.noreply.github.com>
-Meitchouk <lanzamarat@gmail.com>  Marat Joseph Lanza Meitchouk <lanzamarat@gmail.com>
+# Identidad canónica
+Meitchouk <lanzamarat@gmail.com>
+
+# Variantes con mismo email (mapear por nombre)
+Meitchouk <lanzamarat@gmail.com>  Marat Lanza
+Meitchouk <lanzamarat@gmail.com>  Marat Joseph Lanza Meitchouk
+
+# Variantes exactas nombre+email (por si tu Git requiere el par)
 Meitchouk <lanzamarat@gmail.com>  Marat Lanza <lanzamarat@gmail.com>
-Meitchouk <lanzamarat@gmail.com>  Meitchouk <lanzamarat@gmail.com>
+Meitchouk <lanzamarat@gmail.com>  Marat Joseph Lanza Meitchouk <lanzamarat@gmail.com>
+
+# Email noreply → canónico
+Meitchouk <lanzamarat@gmail.com>  <80351751+Meitchouk@users.noreply.github.com>
