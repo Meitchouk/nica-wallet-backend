@@ -18,11 +18,13 @@ import { UserRoleModule } from './user-role/user-role.module';
 import { UserModule } from './user/user.module';
 import { ActivityMiddleware } from './auth/activity.middleware';
 import { ClassificationModule } from './classification/classification.module';
+import { HealthModule } from './health/health.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot(),
     PrismaModule,
+    HealthModule,
     AddressModule,
     BudgetModule,
     CategoryModule,
