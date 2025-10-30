@@ -6,6 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "prebuild": "prisma generate",
     "build": "nest build && copyfiles -u 1 src/templates/**/* dist/templates",
     "build:vercel": "prisma generate || echo 'Prisma generate skipped' && nest build && copyfiles -u 1 src/templates/**/* dist/templates",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -103,3 +104,4 @@
     "seed": "ts-node prisma/seed.ts"
   }
 }
+
