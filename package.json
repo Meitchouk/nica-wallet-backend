@@ -6,7 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "prebuild": "prisma generate",
     "build": "nest build && copyfiles -u 1 src/templates/**/* dist/templates",
+    "build:vercel": "prisma generate || echo 'Prisma generate skipped' && nest build && copyfiles -u 1 src/templates/**/* dist/templates",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "node dist/main.js",
     "start:dev": "nest start --watch",
@@ -40,6 +42,7 @@
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
+    "date-fns": "^4.1.0",
     "dotenv": "^16.4.5",
     "nica-wallet-backend": "file:",
     "nodemailer": "^6.9.14",
@@ -101,3 +104,4 @@
     "seed": "ts-node prisma/seed.ts"
   }
 }
+
